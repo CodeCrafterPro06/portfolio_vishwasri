@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo-size"><span class="logo-span">V</span>ishwasri.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Mywork</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="web">Web Developer</p>
+            <h1>Hi, I'm 
+                <br>
+                <span>Vishwasri Ginnaram</span><br>From  India</h1>
+                <!-- <p class="resume">Click to download my resume.</p> -->
+                <a href="images/resume_v.pdf" download class="download-btn">Download Resume</a>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="mypic2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a motivated professional with a passion for problem-solving and collaboration. I thrive in dynamic environments and enjoy taking on new challenges. With a background in Web Development, I bring a strong work ethic and dedication to every task. I'm eager to contribute to a team and grow both personally and professionally.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C, C++, Java, Python</li>
+                        <li><span>Frontend Development</span><br>HTML, CSS, Tailwind CSS, Bootstrap, Javascript, React.js</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>January[2024] - april[2024]</span><br>As a Web Developer intern at CASHEX [Startup]</li>
+                        <li><span>2022 - 2023</span><br>As a Python Developer Virtual Intern at CODSOFT</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024 [Current]</span><br>B.Tech from BVRIT, Narsapur [9.5 CGPA]</li>
+                        <li><span>2022</span><br>Intermediate from Sri Chaitanya Junior College, Jeedimetla [97.9%]</li>
+                        <li><span>2020</span><br>10th from Geetha School, toopran [100%]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I craft dynamic and responsive websites using the latest technologies like HTML, CSS, Tailwind, Bootstrap, JavaScript, and React.js. From designing layouts to integrating interactive features, I ensure your website stands out with a seamless user experience.
+
+                </p>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Freelance Projects</h2>
+                <p>With expertise in delivering customized web solutions, I’ve worked on diverse freelance projects, including building a feature-rich music website. I focus on translating your ideas into engaging, high-performing websites that meet your unique needs.</p>
+                
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Startup Collaboration</h2>
+                <p> I specialize in helping startups establish their online presence. I’ve designed and developed key sections like Home and Contact pages, seamlessly integrated data management systems like Google Sheets, and delivered websites that align with the company’s vision.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <p class="work-title">Click the images for more details and website links.</p>
+        <div class="work-list">
+            <div class="work">
+                <img src="music.jpeg">
+                <div class="layer">
+                    <h3>Music Vibes - Dynamic Music Website</h3>
+                    <p>Designed and developed a feature-rich music website using HTML, CSS, and JavaScript, featuring key sections like Home, About Us, Contact, and Login. The platform provides access to a curated collection of PDFs and audio files of music spanning the last 5 years. After logging in, users can explore and download all music resources organized into dedicated sections, ensuring a seamless and enriching user experience.</p>
+                    <p class="login">LOGIN CREDENTIALS</p>
+                    <p>username: sharada_12 and password: passion$11</p>
+                    <a href="https://music-website-beta-livid.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="cashex.jpeg">
+                 <div class="layer">
+                    <h3>Startup Website - Cashex</h3>
+                    <p>Developed a professional website for the startup Cashex, focusing on creating dynamic and responsive Home and Contact pages. The Contact page was seamlessly integrated with Google Apps Script, enabling efficient data management by automatically storing user inquiries in Google Sheets. This project showcases my ability to deliver functional, user-friendly, and scalable web solutions tailored to a company's needs.</p>
+                    <a href="https://cashex-website.vercel.app/#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="food.jpeg">
+                <div class="layer">
+                    <h3>Food Much - Restaurant Website</h3>
+                    <p>Designed and developed Food Much, a static website for a restaurant, featuring a clean and appealing layout. The website includes key sections like Why Choose Us, Menu, Delivery and Payment, and Follow Us to provide users with essential information and an engaging experience. This project highlights my ability to create visually appealing and informative static websites tailored to client needs.</p>
+                    <a href="https://vishwafoodmunch.ccbp.tech/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="todo.jpeg">
+                <div class="layer">
+                    <h3>To-Do List Web App</h3>
+                    <p>Developed a dynamic To-Do List Web App using HTML, CSS, and JavaScript, allowing users to add daily tasks and save them persistently using local storage. Even after reloading the page, saved tasks remain intact. Users can mark tasks as completed with a simple click and delete tasks when needed, providing an interactive and efficient task management experience.
+                    </p>
+                    <a href="https://vishwatodos.ccbp.tech/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------certificates------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="cer-dir">
+            <img class="cer" src="frontend development.jpeg"/>
+            <img class="cer" src="mindset.jpeg"/>
+        </div>
+    </div>
+</div> 
+
+
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>ginnaramvishwasri@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i> 7569345115</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ginnaram-vishwasri-201399259"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="dis d-none" id="spinner">
+                <div class="spinner"></div>
+            </div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Vishwasri <i class="fas fa-heart"></i> All rights reserved.
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6T5xlMsuHjQ-udkjOmvo48FMDFOZHwil1Dx-grARmupM_QDublv-QoZeDUjtMb6OnDg/exec' 
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    const spinnerEl = document.getElementById("spinner");
+    form.addEventListener('submit', e => {
+      spinnerEl.classList.remove("d-none");
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            spinnerEl.classList.add("d-none");
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
