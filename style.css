@@ -19,7 +19,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("mypic1.jpg");
+    background-image: url("../images/mypic1.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -432,7 +432,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url("mypic3.jpg");
+        background-image: url("../images/mypic3.jpg");
     }
     .cer-dir {
         display: flex;

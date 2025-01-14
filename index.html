@@ -29,7 +29,6 @@
             <h1>Hi, I'm 
                 <br>
                 <span>Vishwasri Ginnaram</span><br>From  India</h1>
-                <!-- <p class="resume">Click to download my resume.</p> -->
                 <a href="images/resume_v.pdf" download class="download-btn">Download Resume</a>
         </div>
     </div>
@@ -39,7 +38,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="mypic2.jpg">
+                <img src="../images/mypic2.jpg">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -107,7 +106,7 @@
         <p class="work-title">Click the images for more details and website links.</p>
         <div class="work-list">
             <div class="work">
-                <img src="music.jpeg">
+                <img src="../images/music.jpeg">
                 <div class="layer">
                     <h3>Music Vibes - Dynamic Music Website</h3>
                     <p>Designed and developed a feature-rich music website using HTML, CSS, and JavaScript, featuring key sections like Home, About Us, Contact, and Login. The platform provides access to a curated collection of PDFs and audio files of music spanning the last 5 years. After logging in, users can explore and download all music resources organized into dedicated sections, ensuring a seamless and enriching user experience.</p>
@@ -117,7 +116,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="greenplant.jpeg">
+                <img src="../images/greenplant.jpeg">
                 <div class="layer">
                     <h3>Green Earth-Plant Conservation</h3>
                     <p>GreenPlant is a website dedicated to promoting plant protection and environmental sustainability. Developed with a user-friendly interface, it provides valuable insights, resources, and tips for nurturing plants and safeguarding green spaces. The platform aims to raise awareness about the importance of preserving our environment and encourages individuals to take actionable steps towards a greener future.
@@ -126,7 +125,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="cashex.jpeg">
+                <img src="../images/cashex.jpeg">
                  <div class="layer">
                     <h3>Startup Website - Cashex</h3>
                     <p>Developed a professional website for the startup Cashex, focusing on creating dynamic and responsive Home and Contact pages. The Contact page was seamlessly integrated with Google Apps Script, enabling efficient data management by automatically storing user inquiries in Google Sheets. This project showcases my ability to deliver functional, user-friendly, and scalable web solutions tailored to a company's needs.</p>
@@ -134,7 +133,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="food.jpeg">
+                <img src="../images/food.jpeg">
                 <div class="layer">
                     <h3>Food Much - Restaurant Website</h3>
                     <p>Designed and developed Food Much, a static website for a restaurant, featuring a clean and appealing layout. The website includes key sections like Why Choose Us, Menu, Delivery and Payment, and Follow Us to provide users with essential information and an engaging experience. This project highlights my ability to create visually appealing and informative static websites tailored to client needs.</p>
@@ -144,19 +143,6 @@
         </div>
     </div>
 </div>
-
-<!-- ----------certificates------------- -->
-<!-- <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Certificates</h1>
-        <div class="cer-dir">
-            <img class="cer" src="frontend development.jpeg"/>
-            <img class="cer" src="mindset.jpeg"/>
-        </div>
-    </div>
-</div>  -->
-
-
 
 <!-- ----------contact------------- -->
 <div id="contact">
@@ -195,55 +181,6 @@
 
 
 
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-</script>
-
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw6T5xlMsuHjQ-udkjOmvo48FMDFOZHwil1Dx-grARmupM_QDublv-QoZeDUjtMb6OnDg/exec' 
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-    const spinnerEl = document.getElementById("spinner");
-    form.addEventListener('submit', e => {
-      spinnerEl.classList.remove("d-none");
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            spinnerEl.classList.add("d-none");
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
