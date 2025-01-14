@@ -9,7 +9,7 @@ Welcome to my personal portfolio! This platform showcases my skills, projects, a
 - 📞 **Contact Page**: Integrated with Google Apps Script to handle form submissions seamlessly.
 
 ## 🛠 Technologies Used
--HTML, CSS, JavaScript
--Tailwind CSS
--Google Apps Script (for contact form integration)
--Deployed on Vercel
+- HTML, CSS, JavaScript
+- Tailwind CSS
+- Google Apps Script (for contact form integration)
+- Deployed on Vercel
